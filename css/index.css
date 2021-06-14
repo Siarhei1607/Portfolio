@@ -173,7 +173,7 @@ nav {
 .fade-hidden {
   position: relative;
   right: 20px;
-  opacity: 0; }
+  opacity: 1; }
   
 #bio,
 #contact {
@@ -370,6 +370,21 @@ nav {
   z-index: -1;
 }
 
+  @media screen and (max-width: 768px) {
+  .form {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin-top: 15px;
+    margin-left: 0;
+    padding-left: 0; }
+    .form__submit, .form__input, .form__textarea {
+      min-width: 0; } }
+@media screen and (max-width: 375px) {
+  .form {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5; } }
+
+  
 .footer {
   display: grid;
   padding: 100px 200px;
@@ -402,3 +417,31 @@ nav {
 .footer__links li a:hover {
   color: #ffffff;
 }
+
+  @media screen and (max-width: 1024px) {
+  .footer {
+    padding: 100px 30px; } }
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 100px 30px; }
+    .footer__description {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      padding-right: 50px; }
+    .footer__links {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin: 0;
+      justify-self: center; } }
+@media screen and (max-width: 375px) {
+  .footer {
+    padding: 50px 15px; }
+    .footer__title {
+      padding-bottom: 0; }
+    .footer__description {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4; }
+    .footer__links {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      justify-self: start; } }
