@@ -101,6 +101,18 @@ nav {
   opacity: 1;
 }
 
+@media screen and (max-width: 900px) {
+  .menu-items {
+    position: fixed;
+    top: 72px;
+    left: 100vw;
+    background: #f5f5f5;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, left 0.5s ease-in-out, padding-left 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out, left 0.5s ease-in-out, padding-left 0.5s ease-in-out; }
+
 .photo-container {
   display: block;
   width: 100%;
@@ -147,6 +159,22 @@ nav {
   opacity: 1;
 }
 
+  @media screen and (max-width: 1140px) {
+  .container, .caption-container {
+    padding-left: 2%;
+    padding-right: 2%; }
+
+  .caption h1 {
+    margin-top: 0.27em;
+    margin-bottom: 0.27em; } }
+@media screen and (max-width: 460px) {
+  .container {
+    padding: 28vw 2%; } }
+.fade-hidden {
+  position: relative;
+  right: 20px;
+  opacity: 0; }
+  
 #bio,
 #contact {
   background-color: #2196f3;
@@ -172,6 +200,18 @@ nav {
   max-width: 65%;
 }
 
+  @media screen and (max-width: 768px) {
+  .container.bio {
+    flex-direction: column;
+    flex-wrap: wrap; }
+
+  .bio-portrait {
+    max-width: 50%; }
+
+  .bio-text {
+    padding-left: 0;
+    max-width: 100%; } }
+  
 .card {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.26);
   margin-bottom: 2%;
@@ -207,6 +247,13 @@ nav {
   max-width: 100px;
 }
 
+  @media screen and (max-width: 768px) {
+  .skill {
+    max-width: 48%; } }
+@media screen and (max-width: 460px) {
+  .skill {
+    max-width: 100%; } }
+  
 .projects {
   display: flex;
   justify-content: space-around;
@@ -259,6 +306,12 @@ nav {
   border-bottom: none;
 }
 
+  @media screen and (max-width: 768px) {
+  .project {
+    max-width: 100%; } }
+.contact-text {
+  padding-top: 20px; }
+  
 .form {
   grid-column: 2 / 3;
   grid-row: 2 / 4;
